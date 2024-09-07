@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&display=swap');
+
+:root {
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Blue: hsl(223, 87%, 63%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  background-color: #fff;
+}
+
+.main {
+  max-width: 640px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.logo {
+  width: 85px;
+  padding-bottom: 45px;
+}
+
+.title {
+  font-size: 46px;
+  font-weight: 300;
+  color: var(--Gray);
+  letter-spacing: 1.3px;
+  padding-bottom: 31px;
+}
+
+.title strong {
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+
+img {
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--Very-Dark-Blue);
+  padding-bottom: 40px;
+}
+
+.form-group {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 80px;
+}
+
+.input {
+  width: 100%;
+  display: block;
+}
+
+.form-group .input-control {
+  padding: 18px 22px;
+  border-radius: 50px;
+  border: 1px solid var(--Gray);
+  color: var(--Very-Dark-Blue);
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 300;
+  outline: none;
+  display: block;
+  width: 100%;
+}
+
+.error_email {
+  border-color: var(--Light-Red) !important;
+}
+
+.error {
+  text-align: left;
+  color: var(--Light-Red);
+  font-size: 14px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.btn {
+  padding: 20px 22px;
+  text-align: center;
+  background: var(--Blue);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(79, 125, 243, 0.548);
+  transition: 0.3s ease-in;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.social-link i {
+  color: var(--Blue);
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--Pale-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+i:hover {
+  background: var(--Blue);
+  color: #fff;
+}
+
+.copy-right {
+  font-size: 14px;
+  color: var(--Gray);
+  padding-bottom: 30px;
+}
+
+.attribution {
+  background: var(--Blue);
+  padding: 15px;
+  color: #fff;
+}
+
+a {
+  color: var(--Very-Dark-Blue);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 90%;
+    margin: 70px auto;
+  }
+
+  .form-group {
+    grid-template-columns: 1fr;
+    padding: 0 40px;
+  }
+}
